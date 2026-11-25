@@ -1,20 +1,20 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:8B0000,100:FF0000&height=240&section=header&text=Smart%20Stock%20AI&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI-Powered%20Stock%20Intelligence&descAlignY=60&descSize=20" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:8B0000,100:FF0000&height=220&section=header&text=Nexora%20AI%20Voice%20Agent&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Autonomous%20Sales-Intelligence%20Workspace&descAlignY=60&descSize=18" />
 
-<br/>
+</div>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&pause=1000&color=FF0000&center=true&vCenter=true&width=700&lines=AI-Powered+Stock+Analysis;Adaptive+Stock+Engine;Real-Time+Market+Insights;Built+With+FastAPI+%2B+AI" />
+# Nexora AI Voice Agent
 
-<br/><br/>
+<p>
+  <strong>An autonomous sales-intelligence workspace built with FastAPI, SQLite/PostgreSQL, and vanilla JavaScript.</strong>
+</p>
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115%2B-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0%2B-D71F00)](https://www.sqlalchemy.org/)
 [![Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
 [![Deploy](https://img.shields.io/badge/Deploy-Render-46E3B7?logo=render&logoColor=white)](https://render.com/)
-
-</div>
 
 Nexora AI is a responsive, full-stack sales voice-agent MVP. It combines a browser-based voice workspace, an AI sales assistant, lead and appointment management, conversation history, document knowledge search, analytics, and persistent user preferences in a single FastAPI application.
 
