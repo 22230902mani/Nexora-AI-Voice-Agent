@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b16">
+  <meta name="description" content="Nexora AI autonomous sales intelligence platform">
+  <title>Nexora AI — Sales Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-page="overview" aria-label="Nexora AI home">
+        <span class="brand-mark"><i class="fa-solid fa-n"></i><span></span></span>
+        <span class="brand-name">nexora<span>ai</span></span>
+      </a>
+      <div class="workspace-switch"><span class="workspace-icon">N</span><span><b>Nexora Studio</b><small>Pro workspace</small></span><i class="fa-solid fa-chevron-down"></i></div>
+      <div class="nav-caption">WORKSPACE</div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="#" class="nav-item active" data-page="overview"><i class="fa-solid fa-grid-2"></i><span>Overview</span></a>
+        <a href="#" class="nav-item" data-page="voice"><i class="fa-solid fa-wave-square"></i><span>Live voice agent</span><span class="live-dot"></span></a>
+        <a href="#" class="nav-item" data-page="conversations"><i class="fa-regular fa-comments"></i><span>Conversations</span><span class="nav-count" id="conversation-count">4</span></a>
+        <a href="#" class="nav-item" data-page="leads"><i class="fa-solid fa-users"></i><span>Leads & customers</span></a>
+        <a href="#" class="nav-item" data-page="appointments"><i class="fa-regular fa-calendar"></i><span>Appointments</span></a>
+        <a href="#" class="nav-item" data-page="knowledge"><i class="fa-regular fa-folder-open"></i><span>Knowledge base</span></a>
+        <a href="#" class="nav-item" data-page="analytics"><i class="fa-solid fa-chart-line"></i><span>Analytics</span></a>
+      </nav>
+      <div class="nav-caption nav-caption-settings">PREFERENCES</div>
+      <nav class="primary-nav"><a href="#" class="nav-item" data-page="settings"><i class="fa-solid fa-sliders"></i><span>Settings</span></a></nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-tip"><div class="tip-icon"><i class="fa-solid fa-sparkles"></i></div><b>Your AI is learning</b><p>Connect your knowledge base to give Nexora better answers.</p><a href="#" data-page="knowledge">Explore knowledge <i class="fa-solid fa-arrow-right"></i></a></div>
+        <button class="profile-row profile-trigger" data-page="profile" aria-label="Open your profile"><div class="avatar avatar-user profile-avatar">JD</div><span class="profile-copy"><b class="profile-name">Jordan Davis</b><small>Admin · Online</small></span><span class="sidebar-more" aria-hidden="true"><i class="fa-solid fa-ellipsis"></i></span></button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="mobile-menu" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="breadcrumbs"><span>Workspace</span><i class="fa-solid fa-chevron-right"></i><b id="page-crumb">Overview</b></div>
+        <div class="topbar-actions">
+          <label class="global-search"><i class="fa-solid fa-magnifying-glass"></i><input id="global-search" placeholder="Search anything..." autocomplete="off"><kbd>⌘ K</kbd></label>
+          <span class="topbar-divider"></span>
+          <span class="date-display" id="current-date"></span>
+          <button class="icon-button theme-toggle" id="theme-toggle" data-action="toggle-theme" type="button" aria-label="Switch to light theme" title="Switch to light theme"><i class="fa-solid fa-sun" aria-hidden="true"></i></button>
+          <div class="notification-control">
+            <button class="icon-button notification-button" aria-label="Notifications" id="notification-button" aria-haspopup="dialog" aria-controls="notification-panel" aria-expanded="false"><i class="fa-regular fa-bell"></i><span class="notification-dot"></span></button>
+            <section class="notification-panel" id="notification-panel" role="dialog" aria-label="Notifications" hidden>
+              <header class="notification-header">
+                <div><span class="notification-kicker">WORKSPACE</span><h2>Notifications</h2></div>
+                <div class="notification-header-actions">
+                  <button class="notification-refresh" id="notification-refresh" type="button" aria-label="Refresh notifications" title="Refresh"><i class="fa-solid fa-rotate"></i></button>
+                  <button class="notification-close" id="notification-close" type="button" aria-label="Close notifications"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+              </header>
+              <div class="notification-subhead"><span>Recent activity</span><span class="notification-live"><i></i> LIVE</span></div>
+              <div class="notification-list" id="notification-list" role="log" aria-live="polite" aria-busy="false"><div class="notification-loading">Open to load workspace activity…</div></div>
+              <footer class="notification-footer">Updates reflect your current workspace data</footer>
+            </section>
+          </div>
+          <button class="avatar avatar-user top-avatar profile-trigger" data-page="profile" aria-label="Open your profile">JD</button>
+        </div>
+      </header>
+      <div id="app-content" class="page-content" aria-live="polite"></div>
+    </main>
+  </div>
+  <button class="chatbot-launcher" id="chatbot-toggle" type="button" aria-label="Open Nexora AI chat" aria-controls="chatbot-panel" aria-expanded="false">
+    <i class="fa-solid fa-robot" aria-hidden="true"></i>
+  </button>
+  <section class="chatbot-panel" id="chatbot-panel" role="dialog" aria-labelledby="chatbot-title" aria-hidden="true" hidden>
+    <header class="chatbot-header">
+      <span class="chatbot-avatar"><i class="fa-solid fa-robot" aria-hidden="true"></i></span>
+      <div class="chatbot-heading"><strong id="chatbot-title">Nexora AI</strong><small>Sales intelligence assistant</small></div>
+      <button class="chatbot-close" id="chatbot-close" type="button" aria-label="Close chat"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </header>
+    <div class="chatbot-messages" id="chatbot-messages" role="log" aria-live="polite" aria-relevant="additions"></div>
+    <form class="chatbot-form" id="chatbot-form">
+      <label class="sr-only" for="chatbot-input">Message Nexora AI</label>
+      <input id="chatbot-input" name="message" maxlength="2000" autocomplete="off" placeholder="Ask Nexora anything..." required>
+      <button class="chatbot-send" id="chatbot-send" type="submit" aria-label="Send message" disabled><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+    </form>
+    <div class="chatbot-footnote"><i class="fa-solid fa-lock" aria-hidden="true"></i> Replies use your server-configured AI</div>
+  </section>
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
