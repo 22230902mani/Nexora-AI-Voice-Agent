@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:8B0000,100:FF0000&height=220&section=header&text=Nexora%20AI%20Voice%20Agent&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Autonomous%20Sales-Intelligence%20Workspace&descAlignY=60&descSize=18" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:8B0000,100:FF0000&height=220&section=header&text=Nexora%20AI%20Voice%20Agent&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38" />
 
 </div>
 
@@ -15,6 +15,8 @@
 [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0%2B-D71F00)](https://www.sqlalchemy.org/)
 [![Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
 [![Deploy](https://img.shields.io/badge/Deploy-Render-46E3B7?logo=render&logoColor=white)](https://render.com/)
+
+**Live Demo:** [https://nexora-ai-xcx9.onrender.com/](https://nexora-ai-xcx9.onrender.com/)
 
 Nexora AI is a responsive, full-stack sales voice-agent MVP. It combines a browser-based voice workspace, an AI sales assistant, lead and appointment management, conversation history, document knowledge search, analytics, and persistent user preferences in a single FastAPI application.
 
